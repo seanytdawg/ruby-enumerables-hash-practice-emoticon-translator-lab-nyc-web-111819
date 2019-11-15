@@ -11,8 +11,8 @@ new_hash = {
 emoticons.each do |k, v|
 jap_emoticon = v[1]
 eng_emoticon = v[0]
-new_hash["get_emoticon"][jap_emoticon] = k
-new_hash["get_emoticon"][eng_emoticon] = k 
+new_hash["get_meaning"][jap_emoticon] = k
+new_hash["get_emoticon"][k] = v 
 end 
 binding.pry 
 new_hash 
