@@ -13,7 +13,7 @@ eng_emoticon = v[0]
 new_hash["get_meaning"][jap_emoticon] = k
 new_hash["get_emoticon"][eng_emoticon] = jap_emoticon 
 end 
-new_hash 
+return new_hash 
 end
 
 def get_japanese_emoticon(file_path, emoticon)
