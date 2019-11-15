@@ -13,16 +13,15 @@ eng_emoticon = v[0]
 new_hash["get_meaning"][jap_emoticon] = k
 new_hash["get_emoticon"][eng_emoticon] = jap_emoticon 
 end 
-binding.pry
 new_hash 
 end
 
 def get_japanese_emoticon(file_path, emoticon)
   load_library(file_path)
-  return "get_emoticon"[emoticon]
+  return new_hash["get_emoticon"][emoticon]
 end
 
 def get_english_meaning(file_path, emoticon)
   load_library(file_path)
-  return "get_meaning"[emoticon]
+  return new_hash["get_meaning"][emoticon]
 end
