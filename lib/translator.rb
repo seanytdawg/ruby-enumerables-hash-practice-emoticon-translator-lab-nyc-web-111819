@@ -16,10 +16,11 @@ end
 new_hash 
 end
 
-def get_japanese_emoticon
-  return load_library["get_emoticon"]
+def get_japanese_emoticon(file_path, emoticon)
+  load_library(file_path)
+  return "get_emoticon"[emoticon]
 end
 
 def get_english_meaning
-  return load_library["get_emoticon"]
+  return load_library["get_meaning"]
 end
