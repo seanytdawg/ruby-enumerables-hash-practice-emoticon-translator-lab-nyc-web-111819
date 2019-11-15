@@ -19,7 +19,7 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   data = load_library(file_path)
   if new_hash.include?(emoticon)
-  return "get_emoticon"["emoticon"]
+  return data["get_emoticon"][emoticon]
 else 
   puts "Sorry, that emoticon was not found"
 end
@@ -29,7 +29,7 @@ def get_english_meaning(file_path, emoticon)
  data = load_library(file_path)
  binding.pry
   if data.include?(emoticon)
-  return "get_meaning"["emoticon"]
+  return data["get_meaning"][emoticon]
 else 
   puts "Sorry, that emoticon was not found"
 end 
