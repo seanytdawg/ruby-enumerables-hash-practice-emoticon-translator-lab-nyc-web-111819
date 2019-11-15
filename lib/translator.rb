@@ -21,7 +21,7 @@ def get_japanese_emoticon(file_path, emoticon)
   if data["get_emoticon"][emoticon]
   return data["get_emoticon"][emoticon]
 else 
-  puts "Sorry, that emoticon was not found"
+  return "Sorry, that emoticon was not found"
 end
 end
 
@@ -30,6 +30,6 @@ def get_english_meaning(file_path, emoticon)
   if data["get_meaning"][emoticon]
   return data["get_meaning"][emoticon]
 else 
-  puts "Sorry, that emoticon was not found"
+  return "Sorry, that emoticon was not found"
 end 
 end
