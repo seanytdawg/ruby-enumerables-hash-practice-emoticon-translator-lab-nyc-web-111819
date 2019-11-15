@@ -27,7 +27,6 @@ end
 
 def get_english_meaning(file_path, emoticon)
  data = load_library(file_path)
- binding.pry
   if data["get_meaning"][emoticon]
   return data["get_meaning"][emoticon]
 else 
